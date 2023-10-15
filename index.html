@@ -7,6 +7,16 @@
     <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Using <h> tags and <a> tags-->
+    <a name="TopOfThePage"> </a>
+    <a href="https://gomycode.tn/" target="_blank">Take me to GoMyCode's Website</a>
+        <h1>Introduction to HTML</h1>
+        <h2> <b>This a bold tag test</b> This is h2</h2>
+        <h3 title="This is a subheading">This is h3</h3>
+        <h4>This is h4</h4>
+        <h5>This is h5</h5>
+        <h6>This is h6</h6>
+
     <!-- Semantic tags-->
     <section>
         <h1> Contact information <h1>
@@ -17,10 +27,27 @@
         <!-- Article contents -->
     </article>
 
+    <!--Using Text Area-->
+    <textarea name="message" cols="40" rows="10">
+        Welcome to GoMyCode
+    </textarea>
+
+    <!-- Using button element-->
+    <form>
+        <label>First Name:</label>
+        <input type="text" name="firstName" />
+        <br />
+        <label>Last Name:</label>
+        <input type="text" name="lastName" id="lastName" />
+        <br />
+        <!-- This button will submit the form, causing the page to redirect -->
+        <button type="submit">Submit Name</button>
+    </form>
+
     <!--Form data using <form> tag-->
     <form>
         <label for="name">First Name:</label>
-        <input type="text" id="firstName"> 
+        <input type="text" id="firstName" placeholder="Type your first name here"> 
         <label for="name">Last Name:</label>
         <input type="text" id="lastName"> 
         <label for="email">Email:</label>
@@ -29,15 +56,17 @@
         <input type="number" id="phoneNumber">
     </form>
 
-    <!-- Using <h> tags and <a> tags-->
-    <a name="TopOfThePage"> </a>
-    <a href="https://gomycode.tn/" target="_blank">Take me to GoMyCode's Website</a>
-    <h1>Introduction to HTML</h1>
-    <h2> <b>This a bold tag test</b> This is h2</h2>
-    <h3 title="This is a subheading">This is h3</h3>
-    <h4>This is h4</h4>
-    <h5>This is h5</h5>
-    <h6>This is h6</h6>
+    <form>
+        A form<input type="text" name="search" id="search" placeholder="Search..."/>
+    </form>
+
+    <!-- Select inputs-->
+    <select>
+        <option value="WebTrack">Web Track</option>
+        <option value="AITrack">AI Track</option>
+        <option value="GameTrack">Game Track</option>
+        <option value="DataScienceTrack">Data Science Track</option>
+    </select>
 
     <!-- Using <p> tags -->
     <p>This is the paragraph tag <b>This a bold tag test</b> <b><i>This is an italics test</i></b> </p>
